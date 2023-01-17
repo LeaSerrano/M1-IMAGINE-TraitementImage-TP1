@@ -1,0 +1,14 @@
+Qu1 : 
+montrer img originale, indiquer le seuil et montrer au moins 3 images avec d'autres seuils
+justifier choix du seuil
+
+Qu2 :
+seuils -> 0, 128, 256
+
+Qu5 : histo du rouger, du vert et du bleu
+
+Qu6 : 3seuils, 1 sur chaque histo
+pour 1 pixel en sortie 8 valeurs possibles 
+
+Qu 7 : 
+approcher par un mélange de gaussienne, compter pixels blancs et noirs, requantifier à un nb plus petit de niveau de gris puis chercher niveau min local
