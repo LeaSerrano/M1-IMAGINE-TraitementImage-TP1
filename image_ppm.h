@@ -4,6 +4,9 @@
 // Created On      : Tue Mar 31 13:26:36 2005
 // ----------------------------------------------------------------------------
 
+#ifndef IMAGE_PPM
+#define IMAGE_PPM
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -13,7 +16,7 @@
 if( (nom = (type*) calloc (nombre, sizeof(type) ) ) == NULL ) \
 {\
  printf("\n Allocation dynamique impossible pour un pointeur-tableau \n");\
- exit(1);\
+ exit(EXIT_FAILURE);\
 }
 
 typedef unsigned char OCTET;
@@ -221,3 +224,4 @@ void lire_image_pgm(char  nom_image[], OCTET *pt_image, int taille_image)
       }
 }
 /*===========================================================================*/
+#endif

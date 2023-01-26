@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "image_ppm.h"
 #include <fstream>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
@@ -22,6 +23,8 @@ int main(int argc, char* argv[])
 
     lire_nb_lignes_colonnes_image_pgm(cNomImgLue, &nH, &nW);
     nTaille = nH * nW;
+
+    std::cout << nH << std::endl;
 
     allocation_tableau(ImgIn, OCTET, nTaille);
     lire_image_pgm(cNomImgLue, ImgIn, nH * nW);
